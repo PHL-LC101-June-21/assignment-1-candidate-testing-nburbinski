@@ -32,7 +32,7 @@ function gradeQuiz(candidateAnswers) {
   let numOfCorrectAnswers = 0;
 
   for(let i = 0; i <= questions.length - 1; i++) {
-    if (candidateAnswers[i] === correctAnswers[i]) {
+    if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
       numOfCorrectAnswers += 1;
     }
     console.log(`Candidate Answer: ${candidateAnswers[i]} vs Correct Answer: ${correctAnswers[i]}`)
